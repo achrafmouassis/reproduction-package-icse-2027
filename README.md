@@ -6,7 +6,6 @@ This repository contains the reproduction package for the ASE submission. Follow
 
 ## Requirements
 
-- [Nix](https://nixos.org/download/) (used to provision the reproducible environment)
 - Internet access (for downloading dependencies during setup)
 - RAPL (Running Average Power Limit) with the perf_event interface.
 
