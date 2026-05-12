@@ -64,7 +64,7 @@ nix $NIX_FLAGS develop --command bash -c "
   echo ''
   echo 'joule-profiler installation done'
 
-  echo "Cloning gson project..."
+  echo 'Cloning gson project...'
   git clone https://github.com/google/gson.git ../gson
 
   echo 'All setup complete - you are now inside the nix dev shell.'
