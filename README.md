@@ -13,7 +13,7 @@ This repository contains the reproduction package for the ASE submission. Follow
 
 ## Step 1 — Environment Setup
 
-If you want to use Grid'5000, here is the example command to use (replace the cluster placeholder):
+Borrow a node on Grid'5000 (replace the cluster placeholder):
 ```
 oarsub -p {cluster} -l host=1,walltime=2:00:00 "sleep 365d"
 ```
@@ -32,14 +32,6 @@ This script will:
 - Install **[Joule Profiler](https://github.com/Joule-profiler/joule-profiler)**
 - Install **Maven**
 - Install **Gson**
-
-If you don't want to use Grid'5000 and nix, and you already have uv and Java 17 on your machine, then you can use the `setup_no_nix.sh` script.
-
-```bash
-cd setup
-./setup_no_nix.sh
-cd ..
-```
 
 ---
 
