@@ -1,6 +1,6 @@
-# ASE Tools and Datasets - Reproduction Package
+# ICSE 2027 Tool Demonstration and Data Showcase - Reproduction Package
 
-This repository contains the reproduction package for the ASE submission. Follow the steps below to set up the environment, run the benchmarks, and visualize the results.
+This repository contains the reproduction package for the ICSE submission. Follow the steps below to set up the environment, run the benchmarks, and visualize the results.
 
 ---
 
@@ -29,7 +29,7 @@ cd ..
 This script will:
 
 - Initialize a **Nix** environment with all required system dependencies
-- Install **[Joule Profiler](https://github.com/Joule-profiler/joule-profiler)**
+- Install **[Joule Profiler](https://github.com/joule-profiler/joule-profiler)**
 - Install **Maven**
 - Install **Gson**
 
