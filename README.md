@@ -53,6 +53,20 @@ Two [Marimo](https://marimo.io/) notebooks are provided for exploring and visual
 
 ### Aggregate results
 
+Before aggregating, validate the cold/warm pairs with Python 3.10 or later.
+Extract the published archive first, or use the results directory of a fresh benchmark.
+
+~~~bash
+python -m zipfile -e results.zip .
+python validate_results.py results
+~~~
+
+The check reads each iteration directory and requires a readable JSON report
+with phases and a successful Maven exit code for both builds. It reports the
+file paths of any failures and exits with status 1. It detects missing
+reports inside existing iterations, but cannot infer entirely missing iterations.
+It uses only the Python standard library and requires no access to RAPL.
+
 ```bash
 uv run marimo edit notebooks/01_aggregate.py
 ```
